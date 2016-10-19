@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ManageAlertHeader" customModule="GreystoneApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWy-dA-qjX">
+                    <rect key="frame" x="22" y="0.0" width="318" height="73"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8N-PL-06p" customClass="GSButton" customModule="GreystoneApp" customModuleProvider="target">
+                    <rect key="frame" x="410" y="25" width="69" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="bGA-W9-Wgl"/>
+                        <constraint firstAttribute="height" constant="22" id="ful-J6-27q"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="Arrow 3"/>
+                    <connections>
+                        <outlet property="expandButtonHeight" destination="ful-J6-27q" id="GLv-S8-eUP"/>
+                        <outlet property="expandButtonWidth" destination="bGA-W9-Wgl" id="SEv-Ct-qOM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fWy-dA-qjX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0VQ-vg-hMV"/>
+                <constraint firstAttribute="bottom" secondItem="fWy-dA-qjX" secondAttribute="bottom" id="Hmx-NS-wF7"/>
+                <constraint firstItem="i8N-PL-06p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="InJ-8x-GrR"/>
+                <constraint firstAttribute="trailing" secondItem="i8N-PL-06p" secondAttribute="trailing" constant="20" id="K5v-QW-fgA"/>
+                <constraint firstItem="fWy-dA-qjX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ZQb-kp-u1y"/>
+                <constraint firstItem="i8N-PL-06p" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fBg-lV-5Lt"/>
+                <constraint firstItem="fWy-dA-qjX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fHp-gx-dF5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="InJ-8x-GrR"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="expandButton" destination="i8N-PL-06p" id="xAK-ZF-IOc"/>
+                <outlet property="machineNumber" destination="fWy-dA-qjX" id="IfV-0H-2p7"/>
+            </connections>
+            <point key="canvasLocation" x="442" y="105.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Arrow 3" width="15" height="22"/>
+    </resources>
+</document>
